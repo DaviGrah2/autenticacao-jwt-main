@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import axios from "axios";
 
 export default function Configuracoes() {
+  const navigate = useNavigate();
   const [form, setForm] = useState({
     senhaAtual: "",
     novaSenha: "",
