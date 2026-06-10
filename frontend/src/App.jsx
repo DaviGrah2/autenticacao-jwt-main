@@ -2,7 +2,8 @@ import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import Registrar from './pages/Registrar';
 import Perfil from './pages/Perfil';
 import Configuracoes from './pages/Configuracoes';
-import Usuarios from './pages/Usuarios';          // ← adicionar
+import Requisicoes from './pages/Requisicoes';
+import Usuarios from './pages/Usuarios';
 import ProtectedRoute from "./components/ProtectedRoute";
 import Dashboard from "./pages/Dashboard";
 import Login from "./pages/Login";
@@ -20,6 +21,7 @@ export default function App() {
         <Route path="/requisicoes" element={<ProtectedRoute><Requisicoes /></ProtectedRoute>} />
         <Route path="/configuracoes" element={<ProtectedRoute><Configuracoes /></ProtectedRoute>} />
         <Route path="/usuarios" element={<ProtectedRoute><Usuarios /></ProtectedRoute>} />  {/* ← adicionar */}
+        <Route path="/configuracoes/perfil" element={<ProtectedRoute><Perfil /></ProtectedRoute>} />  {/* ← adicionar */}
       </Routes>
     </BrowserRouter>
   );
