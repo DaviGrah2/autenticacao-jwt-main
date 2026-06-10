@@ -655,7 +655,7 @@ export default function Requisicoes() {
     { icon:'⬡', label:'Dashboard',    path:'/dashboard' },
     { icon:'◈', label:'Usuários',      path:'/usuarios' },
     { icon:'◎', label:'Requisições',   path:'/requisicoes' },
-    { icon:'◇', label:'Configurações', path:'/dashboard/configuracoes' },
+    { icon:'◇', label:'Configurações', path:'/configuracoes' },
   ];
 
   const filtered = reqs.filter(r => {
