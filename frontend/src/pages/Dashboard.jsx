@@ -349,6 +349,7 @@ export default function Dashboard() {
     { icon: "⬡", label: "Dashboard" },
     { icon: "◈", label: "Usuários" },
     { icon: "◎", label: "Requisições" },
+    { icon: "◆", label: "Perfil" },
     { icon: "◇", label: "Configurações" },
   ];
 
@@ -384,7 +385,7 @@ export default function Dashboard() {
                   navigate("/requisicoes"); 
                 }
                 if (label === "Perfil") {
-                  navigate("/configuracoes/perfil"); 
+                  navigate("/perfil"); 
                 }
               }}
             >

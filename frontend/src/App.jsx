@@ -20,8 +20,9 @@ export default function App() {
         <Route path="/dashboard" element={<ProtectedRoute><Dashboard /></ProtectedRoute>} />
         <Route path="/requisicoes" element={<ProtectedRoute><Requisicoes /></ProtectedRoute>} />
         <Route path="/configuracoes" element={<ProtectedRoute><Configuracoes /></ProtectedRoute>} />
-        <Route path="/usuarios" element={<ProtectedRoute><Usuarios /></ProtectedRoute>} />  {/* ← adicionar */}
-        <Route path="/configuracoes/perfil" element={<ProtectedRoute><Perfil /></ProtectedRoute>} />  {/* ← adicionar */}
+        <Route path="/usuarios" element={<ProtectedRoute><Usuarios /></ProtectedRoute>} />
+        <Route path="/perfil" element={<ProtectedRoute><Perfil /></ProtectedRoute>} />
+        <Route path="/configuracoes/perfil" element={<Navigate to="/perfil" replace />} />
       </Routes>
     </BrowserRouter>
   );
