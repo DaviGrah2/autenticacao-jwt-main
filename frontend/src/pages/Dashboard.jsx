@@ -370,7 +370,7 @@ export default function Dashboard() {
                 setActiveNav(label);
 
                 if (label === "Configurações") {
-                  navigate("/dashboard/configuracoes");
+                  navigate("/configuracoes");
                 }
 
                 if (label === "Dashboard") {
@@ -379,6 +379,9 @@ export default function Dashboard() {
 
                 if (label === "Usuários") {
                   navigate("/usuarios"); 
+                }
+                if (label === "Requisições") {
+                  navigate("/requisicoes"); 
                 }
               }}
             >
