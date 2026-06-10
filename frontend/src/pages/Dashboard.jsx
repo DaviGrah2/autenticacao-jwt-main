@@ -378,7 +378,7 @@ export default function Dashboard() {
                 }
 
                 if (label === "Usuários") {
-                  navigate("/dashboard/perfil");
+                  navigate("/usuarios"); 
                 }
               }}
             >
