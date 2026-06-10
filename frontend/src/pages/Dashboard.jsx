@@ -383,6 +383,9 @@ export default function Dashboard() {
                 if (label === "Requisições") {
                   navigate("/requisicoes"); 
                 }
+                if (label === "Perfil") {
+                  navigate("/configuracoes/perfil"); 
+                }
               }}
             >
               <span className="nav-icon">{icon}</span>
